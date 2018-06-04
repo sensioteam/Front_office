@@ -1,0 +1,23 @@
+<div id="page-wrapper">
+    <div class="main-page charts-page">
+      <h3 class="title1">Donnees recueillies</h3>
+  
+      <div class="panel-body widget-shadow">
+          
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Temperature en degre</th>
+                <th>Humidite en pourcentage </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let data of datas">
+                <td>{{data.temperature}}</td>
+                <td>{{data.humidite}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+  </div>
+</div>

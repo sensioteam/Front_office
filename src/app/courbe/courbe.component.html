@@ -1,0 +1,25 @@
+
+
+<div id="page-wrapper">
+    <div class="main-page charts-page" >
+      <h3 class="title1">Visualisation de la temperature et de l'humidite</h3>
+      <!--<div class="charts">
+          <div class="col-md-8 charts-grids widget states-mdl">
+              <h4 class="title">Line Chart Example</h4>
+              <canvas id="line" height="162" width="217" style="width: 217px; height: 162px;"> </canvas>
+            </div>
+      </div>-->
+
+      <div class="row chrt-page-grids" height="400" width="900">
+          <h4 class="title">Courbe</h4>
+          <!--<canvas id="line" height="252" width="330" style="width: 330px; height: 252px;"></canvas>-->
+         <div *ngIf="chart">
+            <canvas id="canvas"  >{{ chart }}</canvas>
+          </div>
+
+       </div>
+
+      <div class="clearfix"> </div>
+    </div>
+  </div>
+  
